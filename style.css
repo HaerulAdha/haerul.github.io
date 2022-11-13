@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Pacifico&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eeeeee;
+  min-height: 3000px;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: solid; */
+  padding: 10px;
+  background-color: #0f3460;
+  position: sticky;
+  top: 0;
+}
+
+header .logo h1 {
+  font-family: 'Pacifico';
+  color: white;
+  letter-spacing: 3px;
+}
+
+header ul {
+  display: flex;
+  padding: 20px;
+  /* border: solid; */
+  list-style: none;
+}
+header ul li {
+  /* border: solid; */
+  margin: 0 30px;
+}
+
+header ul li a {
+  text-decoration: none;
+}
+
+/* Toggle */
+.toggle {
+  /* border: solid; */
+}
+
+.toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  margin: 1.8px;
+  background-color: rgb(247, 247, 247);
+  border-radius: 3px;
+}
+.content1 {
+  /* border: solid; */
+  background-color: #16213e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  /* padding: 30px; */
+  color: white;
+}
+.content1 img {
+  width: 200px;
+  border-radius: 100px;
+  margin-top: 50px;
+}
+
+section .text {
+  margin: 20px;
+}
+
+.text h1 {
+  font-size: 50px;
+}
+/* .warapper .carause {
+  white-space: nowrap;
+}
+.carouse img {
+  height: ;
+} */
+
+@media only screen and (max-width: 600px) {
+  header {
+    /* flex-direction: column; */
+    /* position: absolute; */
+  }
+
+  .toggle {
+  }
+
+  header ul {
+    display: none;
+  }
+
+  .content1 {
+    flex-direction: column-reverse;
+  }
+}
